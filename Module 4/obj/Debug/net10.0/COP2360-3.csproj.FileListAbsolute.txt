@@ -1,0 +1,14 @@
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\bin\Debug\net10.0\COP2360-3.exe
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\bin\Debug\net10.0\COP2360-3.deps.json
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\bin\Debug\net10.0\COP2360-3.runtimeconfig.json
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\bin\Debug\net10.0\COP2360-3.dll
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\bin\Debug\net10.0\COP2360-3.pdb
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.AssemblyInfoInputs.cache
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.AssemblyInfo.cs
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.csproj.CoreCompileInputs.cache
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.dll
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\refint\COP2360-3.dll
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.pdb
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\COP2360-3.genruntimeconfig.cache
+C:\Users\eriha\Desktop\COP2360-3\COP2360-3\obj\Debug\net10.0\ref\COP2360-3.dll
