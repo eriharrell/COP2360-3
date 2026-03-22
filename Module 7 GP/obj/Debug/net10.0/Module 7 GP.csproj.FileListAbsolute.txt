@@ -1,0 +1,15 @@
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/bin/Debug/net10.0/Module 7 GP
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/bin/Debug/net10.0/Module 7 GP.deps.json
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/bin/Debug/net10.0/Module 7 GP.runtimeconfig.json
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/bin/Debug/net10.0/Module 7 GP.dll
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/bin/Debug/net10.0/Module 7 GP.pdb
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.AssemblyInfoInputs.cache
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.AssemblyInfo.cs
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.csproj.CoreCompileInputs.cache
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.sourcelink.json
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.dll
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/refint/Module 7 GP.dll
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.pdb
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/Module 7 GP.genruntimeconfig.cache
+/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/Debug/net10.0/ref/Module 7 GP.dll
