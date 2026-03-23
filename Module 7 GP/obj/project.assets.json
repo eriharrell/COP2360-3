@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\eriha\\.nuget\\packages\\": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eriha\\Desktop\\COP2360-3\\Modules\\Module 7 GP\\Module 7 GP.csproj",
+      "projectUniqueName": "/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/Module 7 GP.csproj",
       "projectName": "Module 7 GP",
-      "projectPath": "C:\\Users\\eriha\\Desktop\\COP2360-3\\Modules\\Module 7 GP\\Module 7 GP.csproj",
-      "packagesPath": "C:\\Users\\eriha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eriha\\Desktop\\COP2360-3\\Modules\\Module 7 GP\\obj\\",
+      "projectPath": "/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/Module 7 GP.csproj",
+      "packagesPath": "/Users/admin/.nuget/packages/",
+      "outputPath": "/Users/admin/InternalHD-Documents/int-Education/Palm Beach State/Classes/group-projecs-c#/COP2360-3/Module 7 GP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eriha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/admin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

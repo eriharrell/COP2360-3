@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 
 class Program
 {
+    static string filePath = "animals.json";
+
     static void Main()
     {
-        // Dictionary:Animal-List of Breeds
-        Dictionary<string, List<string>> animals=new Dictionary<string, List<string>>();
-        animals["Dog"]=new List<string> { "Bulldog", "Poodle", "Chihuahua", "Pug" };
-        animals["Cat"]=new List<string> { "Bengal", "Persian", "Siamese", "Maine Coon" };
-        animals["Bird"]=new List<string> { "Falcon", "Parrot", "Eagle", "Sparrow" };
+        Dictionary<string, List<string>> animals = LoadAnimals();
 
-
-        bool running=true;
+        bool running = true;
 
         while (running)
         {
@@ -26,25 +25,25 @@ class Program
             Console.WriteLine("7. Exit");
             Console.Write("Enter number choice: ");
 
-            string choice=Console.ReadLine();
+            string choice = Console.ReadLine();
 
             switch (choice)
             {
                 case "1":
-                    // populate dictionary
                     Console.Write("Enter animal type (e.g., Dog): ");
-                    string animal=Console.ReadLine();
+                    string animal = Console.ReadLine();
 
                     Console.Write("Enter breed: ");
-                    string breed=Console.ReadLine();
+                    string breed = Console.ReadLine();
 
                     if (!animals.ContainsKey(animal))
                     {
-                        animals[animal]=new List<string>();
+                        animals[animal] = new List<string>();
                     }
 
                     animals[animal].Add(breed);
-                    Console.WriteLine("Added successfully!");
+                    SaveAnimals(animals);
+                    Console.WriteLine($"Added {breed} to {animal} successfully!");
                     break;
 
                 case "2":
@@ -64,38 +63,42 @@ class Program
                     break;
 
                 case "3":
-                    // remove key
                     Console.Write("Enter animal type to remove: ");
-                    string removeKey=Console.ReadLine();
+                    string removeKey = Console.ReadLine();
 
                     if (animals.Remove(removeKey))
+                    {
+                        SaveAnimals(animals);
                         Console.WriteLine("Removed successfully!");
+                    }
                     else
+                    {
                         Console.WriteLine("Key not found.");
+                    }
                     break;
 
                 case "4":
-                    // add new key and first value
                     Console.Write("Enter new animal type: ");
-                    string newAnimal=Console.ReadLine();
+                    string newAnimal = Console.ReadLine();
 
                     Console.Write("Enter breed: ");
-                    string newBreed=Console.ReadLine();
+                    string newBreed = Console.ReadLine();
 
-                    animals[newAnimal]=new List<string> { newBreed };
+                    animals[newAnimal] = new List<string> { newBreed };
+                    SaveAnimals(animals);
                     Console.WriteLine("Added successfully!");
                     break;
 
                 case "5":
-                    // add value to existing key
                     Console.Write("Enter animal type: ");
-                    string existingAnimal=Console.ReadLine();
+                    string existingAnimal = Console.ReadLine();
 
                     if (animals.ContainsKey(existingAnimal))
                     {
                         Console.Write("Enter breed to add: ");
-                        string addBreed=Console.ReadLine();
+                        string addBreed = Console.ReadLine();
                         animals[existingAnimal].Add(addBreed);
+                        SaveAnimals(animals);
                         Console.WriteLine("Breed added!");
                     }
                     else
@@ -105,16 +108,15 @@ class Program
                     break;
 
                 case "6":
-                    // sort keys abc order
                     Console.WriteLine("Sorting keys...");
-                    var sorted=new SortedDictionary<string, List<string>>(animals);
-
-                    animals=new Dictionary<string, List<string>>(sorted);
+                    var sorted = new SortedDictionary<string, List<string>>(animals);
+                    animals = new Dictionary<string, List<string>>(sorted);
+                    SaveAnimals(animals);
                     Console.WriteLine("Sorted!");
                     break;
 
                 case "7":
-                    running=false;
+                    running = false;
                     break;
 
                 default:
@@ -122,5 +124,36 @@ class Program
                     break;
             }
         }
+    }
+
+    static Dictionary<string, List<string>> LoadAnimals()
+    {
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            var loadedAnimals = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
+
+            if (loadedAnimals != null)
+            {
+                return loadedAnimals;
+            }
+        }
+
+        return new Dictionary<string, List<string>>
+        {
+            ["Dog"] = new List<string> { "Bulldog", "Poodle", "Chihuahua", "Pug" },
+            ["Cat"] = new List<string> { "Bengal", "Persian", "Siamese", "Maine Coon" },
+            ["Bird"] = new List<string> { "Falcon", "Parrot", "Eagle", "Sparrow" }
+        };
+    }
+
+    static void SaveAnimals(Dictionary<string, List<string>> animals)
+    {
+        string json = JsonSerializer.Serialize(animals, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        });
+
+        File.WriteAllText(filePath, json);
     }
 }

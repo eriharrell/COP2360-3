@@ -1,0 +1,24 @@
+{
+  "Dog": [
+    "Bulldog",
+    "Poodle",
+    "Chihuahua",
+    "Pug",
+    "Pitbull"
+  ],
+  "Cat": [
+    "Bengal",
+    "Persian",
+    "Siamese",
+    "Maine Coon"
+  ],
+  "Bird": [
+    "Falcon",
+    "Parrot",
+    "Eagle",
+    "Sparrow"
+  ],
+  "Rat": [
+    "Norwegian Brown Rat"
+  ]
+}
