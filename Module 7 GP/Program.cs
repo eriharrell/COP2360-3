@@ -5,8 +5,11 @@ using System.Text.Json;
 
 class Program
 {
+
+    // File path for storing the animal dictionary JSON data
     static string filePath = "animals.json";
 
+// Main method to run the console application where users select options to manipulate the animal dictionary
     static void Main()
     {
         Dictionary<string, List<string>> animals = LoadAnimals();
@@ -29,6 +32,8 @@ class Program
 
             switch (choice)
             {
+
+                // Case 1: Populate the dictionary with user input for animal type and breed, then save to JSON file
                 case "1":
                     Console.Write("Enter animal type (e.g., Dog): ");
                     string animal = Console.ReadLine();
@@ -46,6 +51,7 @@ class Program
                     Console.WriteLine($"Added {breed} to {animal} successfully!");
                     break;
 
+                // Case 2: Display the contents of the animal dictionary in a formatted manner
                 case "2":
                     Console.WriteLine("\n--** Animal Dictionary **--");
 
@@ -61,7 +67,7 @@ class Program
 
                     Console.WriteLine();
                     break;
-
+                // Case 3: Remove an animal type (key) from the dictionary based on user input, then save the updated dictionary to the JSON file
                 case "3":
                     Console.Write("Enter animal type to remove: ");
                     string removeKey = Console.ReadLine();
@@ -77,6 +83,8 @@ class Program
                     }
                     break;
 
+
+        // case 4: Add a new animal type (key) and its breed (value) to the dictionary based on user input, then save the updated dictionary to the JSON file
                 case "4":
                     Console.Write("Enter new animal type: ");
                     string newAnimal = Console.ReadLine();
@@ -89,6 +97,8 @@ class Program
                     Console.WriteLine("Added successfully!");
                     break;
 
+
+ // case 5: Add a new breed (value) to an existing animal type (key) in the dictionary based on user input, then save the updated dictionary to the JSON file
                 case "5":
                     Console.Write("Enter animal type: ");
                     string existingAnimal = Console.ReadLine();
@@ -126,6 +136,7 @@ class Program
         }
     }
 
+        // Method to load the animal dictionary from a JSON file, or initialize with default values if the file does not exist
     static Dictionary<string, List<string>> LoadAnimals()
     {
         if (File.Exists(filePath))
@@ -139,6 +150,7 @@ class Program
             }
         }
 
+        // If file doesn't exist or is empty, return a default dictionary with some animal types and breeds so there is at least something to display when the user selects option 2
         return new Dictionary<string, List<string>>
         {
             ["Dog"] = new List<string> { "Bulldog", "Poodle", "Chihuahua", "Pug" },
@@ -147,6 +159,8 @@ class Program
         };
     }
 
+
+// Method to save the animal dictionary to a JSON file with indentation for readability
     static void SaveAnimals(Dictionary<string, List<string>> animals)
     {
         string json = JsonSerializer.Serialize(animals, new JsonSerializerOptions
